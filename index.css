@@ -1,0 +1,170 @@
+body {
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.Zc5vi57GQdyABeAcxvlCFAHaE7&pid=Api&P=0&w=271&h=181");
+  }
+.receipt-body { 
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    position: relative;
+    margin: 2rem auto;
+    min-height: 85vh;
+    max-width: 20%;
+    background-color: rgb(245, 242, 237);
+    box-shadow: 
+    0 1px 2px #fff, /*bottom external highlight*/
+    0 -1px 1px #666, /*top external shadow*/ 
+    inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+    inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+}
+
+.receipt-body h3 {
+    font-size: 1rem;
+}
+
+.total-cost, .covers {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.wrapper {
+    position: relative;
+    min-height: 60vh;
+    min-width: 80%;
+    text-align: center;
+    padding: 1rem;
+}
+/*
+label {
+    font-size: 1.5rem;
+}
+.button-wrap {
+    position: relative;
+    margin: 0 auto;
+    background-color: rgb(245, 242, 237);
+    cursor: pointer; 
+}*/
+.calc-button {
+    position: relative;
+    top: 2rem;
+    padding: 0.5rem;
+    border: solid 2px #000;
+    border-radius: 1rem;
+    max-width: 50%;
+    font-size: 1.5rem;
+    box-shadow: 
+    0 1px 2px #fff, /*bottom external highlight*/
+    0 -1px 1px #666, /*top external shadow*/ 
+    inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+    inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+
+}
+
+.reset-button {
+    position: relative;
+    top: 2rem;
+    padding: 0.5rem;
+    border: solid 2px #000;
+    border-radius: 1rem;
+    max-width: 60%;
+    font-size: 1.5rem;
+    box-shadow: 
+    0 1px 2px #fff, /*bottom external highlight*/
+    0 -1px 1px #666, /*top external shadow*/ 
+    inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+    inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+
+}
+
+img {
+    max-width: 40%;
+    padding-top: 1rem;
+}
+
+input { 
+    max-width: 50%;
+    background-color: rgb(245, 242, 237);
+    border: none;
+    border-bottom: dashed;
+    cursor: pointer;
+}
+.company-name, .result {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;
+    
+}
+
+.result::before {
+    content: "My share: £";
+   
+}
+.result {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.thank-you {
+    position: absolute;
+    bottom: 3vh;
+    right: 1rem;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    transform: rotate(15deg);
+}
+.smiley {
+    position: absolute;
+    transform: rotate(80deg);
+    bottom: 2vh;
+    right: 1rem;
+
+    font-size: 2.3rem;
+}
+
+/*MEDIA QUERY FOR <480px PHONE SCREENS*/
+@media screen and (min-width:390px) and (max-width:480px) {
+    .form, .result, .button {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .receipt-body {
+        min-width: 80%;
+        min-height: 90vh;
+    }
+    input, .button {
+        padding: .5rem;
+    }
+    .company-name {
+        font-size: 1.8rem;
+      }
+      .thank-you {
+        font-size: 1.5rem;
+      }
+}
+
+@media screen and (max-width:380px) {
+    .receipt-body {
+        min-width: 80%;
+        min-height: 90vh;
+    }
+    img {
+        margin-top: .5rem;
+    }
+    .form, .result, .button {
+        margin-top: .5rem;
+        font-size: 1.5rem;
+    }
+    input, .button {
+        padding: .2rem;
+    }
+    .company-name {
+        font-size: 1.8rem;
+      }
+      .thank-you {
+        font-size: 1.5rem;
+      }
+}
+
+
+@media screen and (max-width:290px) {
+    .company-name, .form, .button {
+        font-size: 1.2rem;
+    }
+}

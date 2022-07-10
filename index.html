@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paul Jones: Aspiring Developer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Bangers&family=Chakra+Petch:wght@300&family=Dancing+Script:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@700&family=Inconsolata:wght@200&family=Mina&family=Pangolin&family=Press+Start+2P&family=Space+Mono:wght@700&family=Special+Elite&family=Ubuntu&display=swap');
+    </style><link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="receipt-body">
+        <div class="wrapper">
+          <div class="company-name"><em>Le Resto Imaginaire</em></div>
+          <h3 class="d-none d-xl-block">Avenue des Champs Elysees, 75008 Paris France</h3>
+          <img  id= "header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8GBCds1n3AWWgaC2U5JbNouMdn3U-h3ChjglHBfp3axIfKU_-rA&s" alt="chef hat" />
+          <div class="result" id="result"></div>
+        
+          <form class="form" id="form">
+            <input type="text" class="total-cost" id="total-cost" placeholder="Bill total"/><br>
+            <input type="text" class="covers" id="covers" placeholder="Covers"/><br>
+          </form>
+            <input type="submit" class="calc-button" onclick="calcBill()" id="calcs" value="calculate"></input>
+            <input type="submit" class="reset-button" onclick="myFunction()" value="reset">
+      
+        
+        </div>
+        <div class="thank-you">Thank you <p class="smiley">:-)</p></div>
+    </div>
+
+
+
+<!--Font awesome & Bootstrap import code-->
+    <script src="https://kit.fontawesome.com/29cffa310f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+</body>
+
+</html>
